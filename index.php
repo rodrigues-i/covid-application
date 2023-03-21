@@ -34,6 +34,7 @@
                 </select>
                 <input name="submit" type="submit">
             </form>
+            <?php include "includes/table.php"; ?>
         </main>
     </body>
 </html>

@@ -1,7 +1,9 @@
 <?php
-function call_api() {
+$country = "";
+
+function call_api($country) {
     $cURL = curl_init();
-    $setopt_array = array(CURLOPT_URL => "https://dev.kidopilabs.com.br/exercicio/covid.php?pais=Brazil",
+    $setopt_array = array(CURLOPT_URL => "https://dev.kidopilabs.com.br/exercicio/covid.php?pais=$country",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_HTTPHEADER => array('Content-Type: application/json'));
     curl_setopt_array($cURL, $setopt_array);

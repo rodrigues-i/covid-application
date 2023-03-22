@@ -15,12 +15,15 @@
                     switch($selected_country) {
                         case "1":
                             echo "Brasil foi o país escolhido";
+                            $country = "Brazil";
                             break;
                         case "2":
-                            echo "Alemanha foi o país escolhido";
+                            echo "Canada foi o país escolhido";
+                            $country = "Canada";
                             break;
                         case "3":
                             echo "Russia foi o país escolhido";
+                            $country = "Russia";
                             break;
                     }
                 }
@@ -29,7 +32,7 @@
                 <select name="countries">
                     <option value="0">Escolhe um País</option>
                     <option value="1">Brasil</option>
-                    <option value="2">Alemanha</option>
+                    <option value="2">Canada</option>
                     <option value="3">Russia</option>
                 </select>
                 <input name="submit" type="submit">

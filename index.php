@@ -14,15 +14,12 @@
                     $selected_country = $_POST['countries'];
                     switch($selected_country) {
                         case "1":
-                            echo "Brasil foi o país escolhido";
                             $country = "Brazil";
                             break;
                         case "2":
-                            echo "Canada foi o país escolhido";
                             $country = "Canada";
                             break;
                         case "3":
-                            echo "Russia foi o país escolhido";
                             $country = "Russia";
                             break;
                     }

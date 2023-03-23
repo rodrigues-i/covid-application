@@ -1,10 +1,12 @@
 <div class="table">
     <?php $data = []; ?>
     <?php
-        include "functions.php";
+        include_once "functions.php";
+        include_once "database.php";
         if(isset($_POST['countries'])) {
             
             $covid_data = call_api($country);
+            save_access_info($country, $database);
             $data = $covid_data;
             $result = calculate_total_cases_and_deaths($data);
             $total_cases = $result["total_cases"];

@@ -12,3 +12,10 @@ function calculate_total_cases_and_deaths($data) {
     return ["total_cases" =>$total_cases, "total_deaths" =>$total_deaths];
 
 }
+
+function save_access_info($country, $database) {
+    date_default_timezone_set('America/Sao_Paulo');
+    $date_time = date('Y-m-d H:i:s');
+    $query = "insert into buscas(data, pais) values('$date_time', '$country')";
+    $database->query($query);
+}

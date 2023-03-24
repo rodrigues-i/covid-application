@@ -9,11 +9,11 @@
             save_access_info($country, $database);
             $data = $covid_data;
             $result = calculate_total_cases_and_deaths($data);
-            $total_cases = $result["total_cases"];
-            $total_mortes = $result["total_deaths"];
+            $total_cases = intval($result["total_cases"]);
+            $total_mortes = intval($result["total_deaths"]);
             echo "<p>$country</p>";
-            echo "<p>Total cases: " . $total_cases . "</p>";
-            echo "<p>Total de mortes: " . $total_mortes . "</p>";
+            echo "<p>Total de casos: " . number_format($total_cases, 0, "", ".") . "</p>";
+            echo "<p>Total de mortes: " . number_format($total_mortes, 0, "", ".") . "</p>";
             echo "<table>";
             echo "<tr><td>Estado/Provincia<td>Total Casos<td>Total Mortes";
             $array_size = sizeof($covid_data);

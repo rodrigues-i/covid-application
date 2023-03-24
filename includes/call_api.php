@@ -13,3 +13,18 @@ function call_api($country) {
 
     return $response_array;
 }
+
+if(isset($_POST['countries'])) {
+    $selected_country = $_POST['countries'];
+    switch($selected_country) {
+        case "1":
+            $country = "Brazil";
+            break;
+        case "2":
+            $country = "Canada";
+            break;
+        case "3":
+            $country = "Russia";
+            break;
+    }
+}

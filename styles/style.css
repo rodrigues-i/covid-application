@@ -8,3 +8,7 @@
 .table table tr, .table table td {
     border: 1px solid black;;
 }
+
+.main .footer {
+    margin-top: 200px;
+}

@@ -19,3 +19,12 @@ function save_access_info($country, $database) {
     $query = "insert into buscas(data, pais) values('$date_time', '$country')";
     $database->query($query);
 }
+
+function query_latest_search($database) {
+    $query = "select * from buscas order by id desc limit 1";
+    $obj = $database->query($query);
+    if($obj->num_rows == 1) {
+        $result = $obj->fetch_object();
+        return $result;
+    }
+}

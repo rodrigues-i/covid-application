@@ -19,20 +19,8 @@
             $array_size = sizeof($covid_data);
             for($i = 0; $i < $array_size; $i++) {
                 echo "<tr><td>" . $covid_data[$i]['ProvinciaEstado'] . "<td>" . $covid_data[$i]['Confirmados'] . "<td>" . $covid_data[$i]['Mortos'];
-                if ($i == 10) {
-                    break;
-                }
             }
             echo "</table>";
-            echo "<div class='buttons'>";
-            echo "<button style='border: none;' title='Anterior'><span class='material-symbols-outlined'>
-            arrow_back_ios
-            </span></button>";
-            echo "1";
-            echo "<button style='border: none;' title='Próximo'><span class='material-symbols-outlined'>
-            arrow_forward_ios
-            </span></button>";
-            echo "</div>";
         }
     ?>
 </div>

@@ -12,14 +12,3 @@
 .main .footer {
     margin-top: 200px;
 }
-
-.buttons {
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-    font-size: 1.4rem;;
-}
-
-.buttons button:hover {
-    cursor: pointer;
-}

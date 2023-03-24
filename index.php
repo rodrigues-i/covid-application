@@ -4,7 +4,6 @@
         <title>Casos Covid</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     </head>
     <body>
         <main class="main">

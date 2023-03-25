@@ -1,6 +1,6 @@
 <?php
 try {
-    $database = new mysqli("localhost", "root", "", "db_accessos");
+    $database = new mysqli("localhost", "root", "", "banco");
 
     $database->query("SET NAMES utf8");
     $database->query("SET character_set_connection=utf8");

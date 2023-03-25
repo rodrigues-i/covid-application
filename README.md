@@ -10,12 +10,12 @@ Tendo o xampp instalado, clone este repositório e mova-o para a pasta `htdocs` 
 Exemplo: `C:\xampp\htdocs/covid-application`  
 Você precisar entrar no arquivo `includes/database.php` e alterar a seguinte linha:   
 ```
-$database = new mysqli("localhost", "root", "", "db_accessos");
+$database = new mysqli("localhost", "root", "", "banco");
 ```
 O primeiro argumento `localhost` é o endereço onde o seu banco está rodando, neste caso localhost indica que está rodando localmente.  
 O segundo argumento `root` é o nome do usuário que você usa para acessar ao banco.  
 O terceiro argumento `""` é a senha usada para acessar ao banco. Caso você não utilize uma senha para acessar ao banco, pode deixar a string vazia.  
-O quarto argumento `db_accesso` é o nome do banco que você está acessando.  
+O quarto argumento `banco` é o nome do banco que você está acessando.  
 Após fazer as alterações, lige o apache e o banco mysql no xampp é navegue para o endpoint: `http://localhost/covid-application` para fazer as consultas de dados sobre covid.
 
 ### Página inicial

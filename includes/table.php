@@ -18,7 +18,7 @@
             echo "<tr><td>Estado/Provincia<td>Total Casos<td>Total Mortes";
             $array_size = sizeof($covid_data);
             for($i = 0; $i < $array_size; $i++) {
-                echo "<tr><td>" . $covid_data[$i]['ProvinciaEstado'] . "<td>" . $covid_data[$i]['Confirmados'] . "<td>" . $covid_data[$i]['Mortos'];
+                echo "<tr><td>" . $covid_data[$i]['ProvinciaEstado'] . "<td>" . number_format(intval($covid_data[$i]['Confirmados']), 0, "", ".") . "<td>" . number_format(intval($covid_data[$i]['Mortos']), 0, "", ".");
             }
             echo "</table>";
         }

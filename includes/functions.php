@@ -28,3 +28,10 @@ function query_latest_search($database) {
         return $result;
     }
 }
+
+function change_height_property() {
+    echo "<script>",
+    "var myTable = document.getElementById('table_id');",
+    "document.getElementById('main-container').style.height='min-content';",
+    "</script>";
+}

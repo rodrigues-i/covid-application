@@ -16,6 +16,7 @@ O primeiro argumento `localhost` é o endereço onde o seu banco está rodando, 
 O segundo argumento `root` é o nome do usuário que você usa para acessar ao banco.  
 O terceiro argumento `""` é a senha usada para acessar ao banco. Caso você não utilize uma senha para acessar ao banco, pode deixar a string vazia.  
 O quarto argumento `banco` é o nome do banco que você está acessando.  
+Crie um banco com o phpMyAdmin e na hora de criar as tabelas import o arquivo `database.sql` para criar a tabela que armazenará dados sobre cada consulta.  
 Após fazer as alterações, lige o apache e o banco mysql no xampp é navegue para o endpoint: `http://localhost/covid-application` para fazer as consultas de dados sobre covid.
 
 ### Página inicial

@@ -35,3 +35,14 @@ function change_height_property() {
     "document.getElementById('main-container').style.height='min-content';",
     "</script>";
 }
+
+function translate_country_name($country) {
+    switch($country) {
+        case "Brazil":
+            return "Brasil";
+        case "Russia":
+            return "Rússia";
+        case "Canada":
+            return "Canadá";
+    }
+}

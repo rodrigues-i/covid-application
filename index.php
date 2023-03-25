@@ -7,7 +7,7 @@
     </head>
     <body>
         <main id="main-container" class="main">
-            <h1>Covid-19 no Mundo</h1>
+            <h1>Covid no Mundo</h1>
             <?php
                 include_once "includes/database.php";
                 include_once "includes/call_api.php";
@@ -16,8 +16,8 @@
                 <select name="countries">
                     <option value="0">Escolhe um País</option>
                     <option value="1">Brasil</option>
-                    <option value="2">Canada</option>
-                    <option value="3">Russia</option>
+                    <option value="2">Canadá</option>
+                    <option value="3">Rússia</option>
                 </select>
                 <input id="btnClick" name="submit" type="submit" value="Buscar">
             </form>

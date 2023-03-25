@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
-        <main class="main">
+        <main id="main-container" class="main">
             <h1>Covid-19 no Mundo</h1>
             <?php
                 include_once "includes/database.php";
@@ -19,7 +19,7 @@
                     <option value="2">Canada</option>
                     <option value="3">Russia</option>
                 </select>
-                <input name="submit" type="submit">
+                <input id="btnClick" name="submit" type="submit" value="Buscar">
             </form>
             <?php include "includes/table.php"; ?>
             <?php include "includes/footer.php"; ?>
